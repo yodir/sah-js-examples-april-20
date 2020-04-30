@@ -10,7 +10,12 @@ let name ='Adam';
 age = 34;
 
 function myLittleFunction() {
+// condition: number of pieces smaller than 5
+    if ($('p').length < 5) {
     $('main').append('<p>A p is appended in the main</p>');
+} else {
+  console.log('We reached the maximum');
+}
     $('p').css('border', '1px solid red');
     $('p').css('padding', '10px');
 }
@@ -24,6 +29,15 @@ $('#remove').click(function () {
 });
 
 
+//Fourth part
+
+if (conditions that true or false) {
+// condition true
+} else {
+    // condition false
+}
+
+
 console.log('Script file is loaded.');
 
 //Single line comment
@@ -34,3 +48,17 @@ lines
 of comments
 */
 
+
+
+let colors = ['orange', 'yellow,' 'blue', 'lime', 'magenta'];
+
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[0]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[1]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[2]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[3]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[4]);
